@@ -14,7 +14,7 @@
 Karena kita mungkin akan jarang membuat file .json sendiri namun mengunduhnya dari sumber lain, pikirkan bagaimana menggunakan JSON dengan baik diprogram daripada memikirkan strukturnya.
 
 #No. 2
-![Gambar No. 2 Ketika Berhasil]
+![Image pf No 2]
 (https://github.com/diosurandito/arkademy/blob/master/no2_true.png)
 
 ![Gambar No. 2 Ketika Gagal]
