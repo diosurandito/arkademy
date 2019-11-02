@@ -1,6 +1,7 @@
 # arkademy
 
 > Keterangan : 
+tools : Chrome, Postman, Xampp, Laravel, Git Bash
   No 1 - 5 menggunakan php
   No. 6a -> Database MySql (file bernama no6_db.sql)
   No. 6b -> menggunakan bootstrap dan html
@@ -68,12 +69,14 @@ https://www.w3schools.com/php/func_string_explode.asp
 https://www.php.net/manual/en/function.split.php
 
 #### No. 6
->Nomor 6a pada file (no6_db.sql)
+>Nomor 6a pada file (no6_db.sql)->buat database name "no6_db"->import
 
 >Nomor 6b pada folder no6b
--buka localhost/no6b.html
+->buka localhost/no6b/no6b.html
 
 >Nomor 6c pada folder no6c
--menggunakan framework laravel
--buka dengan url localhost/no6c
+->menggunakan framework laravel
+->php versi 7.2
+->xampp
+->buka dengan url localhost/no6c/
 
