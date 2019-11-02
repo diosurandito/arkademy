@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Arkademy Coffe Shop</title>
+
+    <style type="text/css">
+     @font-face {
+        font-family: "Airbnb Cereal App";
+        src: url('assets/fonts/AirbnbCerealBold.ttf');
+    }
+
+    .coffeheader {
+       font-family: "Airbnb Cereal App";
+   }
+</style>
+
+<meta name="description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+<meta name="author" content="pixelcave">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Open Graph Meta -->
+<meta property="og:title" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework">
+<meta property="og:site_name" content="OneUI">
+<meta property="og:description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+
+<!-- Icons -->
+<link rel="shortcut icon" href="assets/media/photos/arkalogo2.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/media/photos/arkalogo2.png">
+
+<!-- END Icons -->
+
+<!-- Stylesheets -->
+<!-- Page JS Plugins CSS -->
+<link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">
+<link rel="stylesheet" href="assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css">
+
+<!-- Fonts and OneUI framework -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+<link rel="stylesheet" id="css-main" href="assets/css/oneui.min.css">
+
+<script src="assets/js/sweetalert.min.js"></script>
+
+</head>
+<body>
+
+    <div id="page-container" class="page-header-light">
+        <!-- Header -->
+        <header id="page-header">
+            <!-- Header Content -->
+            <div class="content-header">
+                <!-- Left Section -->
+                <div class="d-flex align-items-center">
+                    <img src="assets/media/photos/arkalogo.png" style="width: 120px; padding: 15px">
+                    <div class="coffeheader" style="font-size: 20px"><b style="color: #FF8FB2;">ARKADEMY</b><b> COFFEE SHOP</b></div>                    
+
+                    
+                </div>
+                <!-- END Left Section -->
+
+                <!-- Right Section -->
+                <div class="d-flex align-items-center">
+                    <button data-toggle="modal" data-target="#add" class="btn bg-smooth-light mr-1 mb-3 text-white">
+                       &nbsp;&nbsp;&nbsp;ADD&nbsp;&nbsp;&nbsp;   
+                   </button>
+
+               </div>
+               <!-- END Toggle Side Overlay -->
+           </div>
+           <!-- END Right Section -->
+       </header>
+       <!-- END Header -->
+
+       <!-- Page Content -->
+
+       <div class="content" >
+
+        <div class="block-content block-content-full">
+            <table id="table-organizer" class="table table-borderless">
+                <thead style="background: #CECECE;">
+                   <tr>
+                      <th width="30">No</th>
+                      <th>Cashier</th>
+                      <th>Product</th>
+                      <th>Category</th>
+                      <th>Price</th>
+                      <th width="80">Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Pevita Pearce</td>
+                    <td>Latte</td>
+                    <td>Drink</td>
+                    <td>Rp. 10.000</td>
+                    <td class="text-center">
+                      <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#edit" title="Edit Data">
+                              <b style="color: green">Edit</b>
+                          </button>
+                          <b> | </b>
+                          <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#destroy" title="Hapus Data">
+                              <b style="color: red">Delete</b>
+                          </button>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Raisa Andriana</td>
+                <td>Cake</td>
+                <td>Food</td>
+                <td>Rp. 15.000</td>
+                <td class="text-center">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#edit" title="Edit Data">
+                          <b style="color: green">Edit</b>
+                      </button>
+                      <b> | </b>
+                      <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#destroy" title="Hapus Data">
+                          <b style="color: red">Delete</b>
+                      </button>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Raisa Andriana</td>
+            <td>Fried Rice</td>
+            <td>Food</td>
+            <td>Rp. 30.000</td>
+            <td class="text-center">
+              <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#edit" title="Edit Data">
+                      <b style="color: green">Edit</b>
+                  </button>
+                  <b> | </b>
+                  <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#destroy" title="Hapus Data">
+                      <b style="color: red">Delete</b>
+                  </button>
+              </div>
+          </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Pevita Pearce</td>
+        <td>Gudeg</td>
+        <td>Food</td>
+        <td>Rp. 35.000</td>
+        <td class="text-center">
+          <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#edit" title="Edit Data">
+                  <b style="color: green">Edit</b>
+              </button>
+              <b> | </b>
+              <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#destroy" title="Hapus Data">
+                  <b style="color: red">Delete</b>
+              </button>
+          </div>
+      </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Joko Purwadhi</td>
+    <td>Ice Tea</td>
+    <td>Drink</td>
+    <td>Rp. 55.000</td>
+    <td class="text-center">
+      <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#edit" title="Edit Data">
+              <b style="color: green">Edit</b>
+          </button>
+          <b> | </b>
+          <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#destroy" title="Hapus Data">
+              <b style="color: red">Delete</b>
+          </button>
+      </div>
+  </td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>Dio Surandito</td>
+    <td>Masakan Ibu</td>
+    <td>Food</td>
+    <td>Rp. 15.000</td>
+    <td class="text-center">
+      <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#edit" title="Edit Data">
+              <b style="color: green">Edit</b>
+          </button>
+          <b> | </b>
+          <button type="button" class="btn btn-sm btn-light" data-toggle="modal" data-target="#destroy" title="Hapus Data">
+              <b style="color: red">Delete</b>
+          </button>
+      </div>
+  </td>
+</tr>
+
+<div class="modal fade" id="destroy" tabindex="-1" role="dialog" aria-labelledby="modal-block-popin modal-block-vcenter" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-popin modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="block block-themed block-transparent mb-0">
+                <div class="block-header bg-white">
+                    <h2 class="block-title text-dark"></h2>
+                    <div class="block-options">
+                        <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-fw fa-times" style="color: red;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="block-content font-size-sm text-center">
+                    <h3><b> Data Raisa Andriani ID</b> <b class="text-smooth-light">#1</b> </h3><br>
+                    <img src="assets/media/checkmark.png" style="height: 150px"><br><br>
+                    <h3><b>Berhasil Dihapus</b></h3><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="modal-block-popin" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="block block-themed block-transparent mb-0">
+                <div class="block-header bg-light">
+                    <h2 class="block-title text-dark"><b>EDIT<b></h2>
+                    <div class="block-options">
+                        <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-fw fa-times" style="color: red;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="block-content font-size-sm">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-12">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="cashier" value="Raisa Andriana" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="product" value="Ice Tea" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="category" value="Drink" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="price" value="Rp. 15.000" required>
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full text-right border-top">
+                                    <button type="submit" class="btn bg-smooth-light text-white">EDIT</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</tbody>
+</table>
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="modal-block-popin" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="block block-themed block-transparent mb-0">
+                <div class="block-header bg-light">
+                    <h2 class="block-title text-dark"><b>ADD<b></h2>
+                    <div class="block-options">
+                        <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-fw fa-times" style="color: red;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="block-content font-size-sm">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-12">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="cashier" value="Raisa Andriana" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="product" value="Ice Tea" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="category" value="Drink" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="js-maxlength form-control" type="text" name="price" value="Rp. 15.000" required>
+                                    </div>
+                                </div>
+                                <div class="block-content block-content-full text-right border-top">
+                                    <button type="submit" class="btn bg-smooth-light text-white">ADD</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+<!-- END Page Container -->
+
+
+<script src="assets/js/oneui.core.min.js"></script>
+
+        <!--
+            OneUI JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_es6/main/app.js
+        -->
+        <script src="assets/js/oneui.app.min.js"></script>
+
+        <!-- Page JS Plugins -->
+        <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/js/plugins/datatables/buttons/dataTables.buttons.min.js"></script>
+        <script src="assets/js/plugins/datatables/buttons/buttons.print.min.js"></script>
+        <script src="assets/js/plugins/datatables/buttons/buttons.html5.min.js"></script>
+        <script src="assets/js/plugins/datatables/buttons/buttons.flash.min.js"></script>
+        <script src="assets/js/plugins/datatables/buttons/buttons.colVis.min.js"></script>
+
+        <!-- Page JS Code -->
+        <script src="assets/js/pages/be_tables_datatables.min.js"></script>
+    </body>
+    </html>
